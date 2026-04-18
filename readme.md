@@ -93,39 +93,3 @@ public class Connect {
 }
 ```
 
-## Requirements
-Make sure:
-
-1. PostgreSQL is installed and running.
-2. The database already exists.
-3. The username and password are correct.
-4. The PostgreSQL JDBC driver is included in the project.
-
-## Common issues
-
-### Driver not found
-If you get:
-
-```text
-PostgreSQL Driver not found
-```
-
-add the PostgreSQL JDBC dependency to your project.
-
-### Wrong password or username
-If the login details are incorrect, the connection will fail with an authentication error.
-
-### Database does not exist
-If the database name in the URL is wrong, the connection will fail.
-
-### Wrong port
-PostgreSQL usually uses port `5432`, but your setup may use a different one.
-
-## Quick checklist
-Before running the code, confirm:
-
-- `URL` points to the correct host, port, and database name
-- `USER` is correct
-- `PASS` is correct
-- PostgreSQL is running
-- JDBC driver is available
